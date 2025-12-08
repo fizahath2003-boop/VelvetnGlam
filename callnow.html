@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call Now</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+  function redirectToThankYou() {
+    // Delay redirect so the call can start
+    setTimeout(function() {
+      window.location.href = "thankyou.html";
+    }, 2000); // 2 seconds — adjust if you want
+  }
+</script>
+
+</head>
+<body>
+
+<header><h1>Call Us Now</h1></header>
+
+<div class="call-box" style="text-align:center; padding:40px;">
+  <h2>☎ Call Our Support Team</h2>
+
+  <p style="font-size:1.2rem;">Phone: <strong>+1-234-567-890</strong></p>
+
+  <!-- Call Button -->
+  <a href="tel:+9900889900" onclick="redirectToThankYou()" 
+     style="padding:15px 25px; background:#d63384; color:white; 
+            border-radius:8px; display:inline-block; margin-top:20px;
+            text-decoration:none; font-size:1.2rem;">
+    Call Now
+  </a>
+</div>
+
+</body>
+</html>
